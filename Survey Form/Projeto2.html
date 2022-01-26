@@ -1,0 +1,69 @@
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <link rel="stylesheet" href="projeto2.css">
+    </head>
+    <body>
+        <header>
+            <h1 id='title'>Formulário</h1>
+            <p id='description'>responde ai!</p>
+        </header>
+        <section>
+            <form id='survey-form' action="">
+                <div class='papa'>
+                    <label for="name" id="name-label">Nome:</label>
+                    <input type="text" name='nome' id='name' placeholder="Nome" required>
+                </div>
+    
+                <div class='papa'>
+                    <label for="email" id='email-label'>Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+    
+                <div class='papa'>
+                    <label for="idade" id='number-label'>Idade:</label>
+                    <input type="number" name="idade" id="number" placeholder="Idade" min='10' max='99'>
+                </div>
+    
+                <div class='papa'>
+                    <label for="">Ocupação:</label required>
+                        <select name="ocupação" id="dropdown">
+                            <option value="escolha">Escolha uma opção</option>
+                            <option value="estudante">Estudante</option>
+                            <option value="estudantetotal">Estudante em tempo integral</option>
+                            <option value="trabalhadortotal">Trabalho em tempo integral</option>
+                            <option value="naodigo">Prefiro não dizer.</option>
+                        </select>
+                </div>
+    
+                <div class='papa'>
+                    <label for="radio">Objetivo:</label>
+                    <input type="radio" name="ala" value="ala">Trabalho formal
+                    <input type="radio" name="ala" value="al">Empreendendorismo
+                </div>
+    
+                <div class='papa'>
+                    <label for="checkbox">Interesses:</label>
+                    <input type="checkbox" name="aaa" value="1">Música
+                    <input type="checkbox" name="aaa" value="2">Esportes
+                    <input type="checkbox" name="aaa" value="3">Tecnologia
+                    <input type="checkbox" name="aaa" value="4">Investimentos
+                </div>
+    
+                <div class='sugest'>
+                    <p>Sugestões</p>
+                    <textarea name="textarea" class="txt" cols="30" rows="10"></textarea>
+                </div>
+    
+                <div class='botao'>
+                    <button type="submit" id=submit>Concluído</button>
+                </div>
+            </form>
+        </section>
+        
+    </body>
+    </html>

@@ -1,0 +1,86 @@
+body{
+    padding: 90px;
+    height: 2000px;
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+@media (min-width: 100%) {#header {
+    display: flex;
+    
+}}
+#nav-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(59, 48, 48);
+
+    
+}
+ul {
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    height: 100%;
+    font-size: 30px;
+}
+li {
+    margin-right: 30px;
+}
+a{
+    color: rgb(255, 255, 255);
+}
+#header-img{
+    width: 120px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+div#melhorDica{
+    display: inline-block;
+    margin: 3px;
+}
+
+
+.grid {
+    display: flex;
+}
+.logo {
+    width: 60vw;
+}
+  
+  @media (max-width: 650px) {
+    .logo {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+}
+  
+  .logo > img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+  
+  @media (max-width: 650px) {
+    .logo > img {
+      margin: 0 auto;
+    }
+}
+img {
+    width: 75px;
+}
+

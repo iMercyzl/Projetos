@@ -1,0 +1,67 @@
+@media only screen
+and (min-width: 375)
+and (max-width: 1440) { body {
+    background: hsl(225, 100%, 94%);
+    background-image: url(/Music-card-main/ordem-de-compra/assets/img/pattern-background-mobile.svg);
+}
+    
+}
+body {
+    background: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display";
+    text-align: center;
+    background-image: url(/Music\ card/assets/img/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+p{
+    font-size: 16px;
+}
+article {
+    background: white;
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(22, 22, 22,15%);
+    
+    
+}
+#valor {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#fotinha img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+#notinha {
+    display:flex;
+}
+footer {
+    
+    font-style: italic;
+}
+#proceedPayment{
+    background: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    padding: 15px;
+    width: 360px;
+    margin: auto;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+#cancelOrder{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: hsl(224, 23%, 55%);
+    
+    border:none!important;
+    background-color: white!important;
+}#cancelOrder:hover{
+    color: hsl(224, 35%, 48%);
+}

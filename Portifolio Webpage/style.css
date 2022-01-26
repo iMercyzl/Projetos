@@ -1,0 +1,140 @@
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  /* 980px / 16px = 61.25em */
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  /* 460px / 16px = 28.75em */
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
+  h1 {
+      font-size: 6rem;
+  }
+  h2 {
+      font-size: 4.2rem;
+  }
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--mainwhite);
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #CF6E23;
+    box-shadow: 0 2px 0 rgba(255, 255, 255, 0.4);
+}
+.listaNavegacao{
+    display: flex;
+    margin-right: 2rem;
+}
+@media (max-width: 28.75em) {
+    .nav {
+        justify-content: center;
+    }
+    .listaNavegacao {
+        margin: 0 1rem;
+    }
+}
+.listaNavegacao a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+.listaNavegacao a:hover {
+    background: #42BECF; 
+}
+body{
+    background-color: #062B26;
+    color: white;
+    margin: 0;
+    padding: 0;
+    
+}
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #100A2B;
+    
+}
+.welcome-section > p{
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #CF6E23;
+}
+.secaoProjetos {
+    text-align: center;
+    padding: 10rem 2rem;
+}
+.secaoProjetosTitulo {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--mainwhite);
+}
+@media (max-width: 28.75em) {
+    .secaoProjetosTitulo {
+        font-size: 4rem;
+    }
+}
+.sessaoContatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    padding: 0 2rem;
+    background: #100A2B;
+}
+.sessaoContatosTitulo > h2 {
+    font-size: 6rem;
+}
+@media (max-width: 28.75em) {
+    .sessaoContatosTitulo > h2 {
+        font-style: italic;
+    }
+}
+.listaContatos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+.detalhesContato {
+    font-size: 2.4rem;
+    color: white;
+}
+.detalhesContato:hover{
+    transform:translateY(8px)
+}
+.disposicao {
+    line-height: 50px;
+    font-size: 20px;
+}
+.titulo {
+    line-height: 1px;
+}
