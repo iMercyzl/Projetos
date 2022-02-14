@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+  --softRed: hsl(14, 88%, 65%);
+  --veryDarkGrayBlue: hsl(237, 12%, 33%);
+  --darkGrayBlue: hsl(240, 6%, 50%);
+  --lightGrayBlue: hsl(240, 5%, 91%);
+  --softViolet: hsl(273, 75%, 66%);
+  --softBlue: hsl(240, 73%, 65%);
+  --fontSize: 12px;
+}
+html {
+  box-sizing: initial;
+  font-size: 100%;
+}
+
+*,
+*::before
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 10rem 1rem;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+    var(--softViolet), 
+    var(--softBlue));
+  color: var(--veryDarkDesaturatedBlue);
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 2rem;
+  max-width: 56rem;
+  padding: 2.875rem 1.5rem;
+  background-image: url("/faq-accordion-card-main/assets/img/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 20rem;
+}
+
+.cardBox {
+  display: none;
+}
+
+.cardImage {
+  position: relative;
+}
+
+.cardImage  img {
+  display: block;
+  position: absolute;
+  top: -11rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  max-width: 20rem;
+  margin: auto;
+  
+}
+
+.cardText {
+  padding-top: 7rem;
+}
+
+.accordionItem {
+  padding-top: 1rem;
+  border-bottom: 1px solid var(--lightGrayBlue);
+}
+
+.accordionItem h2 {
+  margin-bottom: 0;
+}
+
+.accordionQuestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 0.2rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.accordionQuestion.open {
+  font-weight: 700;
+}
+
+.accordionQuestion.open::after {
+  transform: rotate(180deg);
+}
+
+.accordionQuestion::after {
+  content: '';
+  display: block;
+  width: 0.625rem;
+  height: 1rem;
+  border: none;
+  background-image: url(/faq-accordion-card-main/assets/img/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  transition: transform 300ms ease-in-out;
+}
+
+.accordionQuestion:focus
+.accordionQuestion:focus-visible {
+  border: none;
+  outline: dashed 1px rgba(0, 0, 0, 0.25);
+}
+
+.accordionContent {
+  font-size: 0.75rem;
+  line-height: 1;
+  padding-bottom: 1rem;
+}
+
+.accordionCollapse.collapse {
+  display: none;
+}
+
+.accordionCollapse.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: heigth 300ms ease;
+}
+
+.accordionCollapse.open {
+  display: block;
+}
+
+/* DESKTOP STYLES */
+@media (min-width: 56em) {
+
+  body {
+    padding: 5rem;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 4.375rem 6.25rem 4.375rem 0;
+    background-image: url("/faq-accordion-card-main/assets/img/bg-pattern-desktop.svg");
+    background-size: 45%;
+    background-position: -15% center
+  }
+  .cardBox {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateX(-52%) translateY(-26%);
+  z-index: 1;
+  }
+
+  .cardImage,
+  .cardText {
+    flex: 1;
+  }
+
+  .cardImage {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .cardImage img {
+    position: relative;
+    top: auto;
+    left: auto;
+    max-width: 25rem;
+    transform: translateX(-5.4rem);
+  }
+
+  .cardText {
+    padding-top: 0;
+  }
+}

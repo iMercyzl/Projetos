@@ -2,7 +2,7 @@
 and (min-width: 375)
 and (max-width: 1440) { body {
     background: hsl(225, 100%, 94%);
-    background-image: url(/Music-card-main/ordem-de-compra/assets/img/pattern-background-mobile.svg);
+    background-image: url(/Order\ summary\ component/assets/img/pattern-background-mobile.svg);
 }
     
 }
@@ -10,7 +10,7 @@ body {
     background: hsl(225, 100%, 94%);
     font-family: "Red Hat Display";
     text-align: center;
-    background-image: url(/Music\ card/assets/img/pattern-background-desktop.svg);
+    background-image: url(/Order\ summary\ component/assets/img/pattern-background-desktop.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
